@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "live": "fire-react-house",
+    "test": "test-fire-react-house"
+  },
+  "targets": {},
+  "etags": {}
+}

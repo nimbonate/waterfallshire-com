@@ -1,0 +1,49 @@
+{
+  "name": "fire-react-house",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^9.6.7",
+    "polished": "^4.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-grid-system": "^8.1.4",
+    "react-helmet-async": "^1.2.3",
+    "react-hook-form": "^7.34.2",
+    "react-icons": "^4.3.1",
+    "react-image-lightbox": "^5.1.4",
+    "react-router-dom": "^6.2.1",
+    "react-toastify": "^8.2.0",
+    "styled-components": "^5.3.3"
+  },
+  "scripts": {
+    "start": "set PORT=3000 && env-cmd -f .env react-scripts start",
+    "start:test1": "set PORT=3001 && env-cmd -f .env.test1 react-scripts start",
+    "build": "env-cmd -f .env react-scripts build",
+    "build:test1": "env-cmd -f .env.test1 react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "react-scripts": "^5.0.1"
+  }
+}

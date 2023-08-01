@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- HTML Meta Tags -->
+    <meta name="title" content="Fire React House" data-react-helmet="true" /><!-- data-react-helmet="true" on all tags dynamically render in App.js -->
+    <meta name="description" content="Fire React House is a baseline template app." data-react-helmet="true">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" data-react-helmet="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#000000" data-react-helmet="true" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Fire React House" data-react-helmet="true" />
+    <meta itemprop="description" content="Fire React House is a baseline template app." data-react-helmet="true" />
+    <meta itemprop="image" content="https://firebasestorage.googleapis.com/v0/b/test-fire-react-base.appspot.com/o/public%2Fbanners%2Fog-banner.png?alt=media&token=43d57edb-3b15-4b72-b476-f4dadb1eb759" data-react-helmet="true" />
+
+    <!-- Facebook/OpenGraph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name " content="Fire React House" data-react-helmet="true" />
+    <meta property="og:url" content="https://fire-react-house.web.app" data-react-helmet="true" />
+    <meta property="og:title" content="Fire React House" data-react-helmet="true" />
+    <meta property="og:description" content="Fire React House is a baseline template app." data-react-helmet="true" />
+    <!-- Suggested dimensions for og:image1200×630 pixels -->
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/test-fire-react-base.appspot.com/o/public%2Fbanners%2Fog-banner.png?alt=media&token=43d57edb-3b15-4b72-b476-f4dadb1eb759" data-react-helmet="true" /> 
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fire React House" data-react-helmet="true" />
+    <meta name="twitter:description" content="Fire React House is a baseline template app." data-react-helmet="true" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/logo192.png" data-react-helmet="true" />
+
+    <!-- PWA Tags -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" data-react-helmet="true" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  </head>
+  <body>
+    <script>
+      function isIE() {
+        ua = navigator.userAgent;
+        /* MSIE used to detect old browsers and Trident used to newer ones*/
+        var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+          return is_ie; 
+      }
+      /* Create an alert to show if the browser is IE or not */
+      if (isIE()){
+          alert('Looks like you are using the ancient, unsupported, and unsafe Internet Explorer! No worries, just install a modern web browser like Chrome or email help@minute.tech and we will step you through it.');
+      } 
+    </script>
+    <noscript>
+      Uh oh, looks like JavaScript isn't enabled. This is rare, so you get
+      special treatment. Email help@minute.tech and they can help.
+    </noscript>
+    <!--[if IE]>
+      Looks like you are using the ancient, unsupported Internet Explorer! 
+      No worries, just install a modern web browser like Chrome, Firefox, or Safari. 
+      If you can't figure out how to do that, email help@minute.tech and we will step you through it!
+    <![endif]-->
+    <div id="root"></div>
+  </body>
+</html>

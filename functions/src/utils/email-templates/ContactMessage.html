@@ -1,0 +1,80 @@
+<html>
+    <head>
+      <title> {{{ insert itemName }}} Added</title>
+    </head>
+
+    <body>
+       <div style="width: 100%; font-family: Arial, Helvetica, sans-serif;">
+            <div style="text-align: center;">
+                    <img
+                        alt="{{{ insert siteName }}} logo"
+                        src="{{{ insert logoUrl }}}"
+                        width="{{{ insert logoWidth 'default=150' }}}px"
+                        height="auto"
+                    />
+            </div>
+
+            <h1 style="margin: 20px 0 0 0; text-align: center; color: {{{ insert colors.primary 'default=black' }}} !important;">
+                {{{ insert siteName }}}
+            </h1>
+
+            <div style="margin: auto; width: 80%; padding: 1%;">
+                <h2>New {{{ insert itemName }}} Added</h2>
+                <div style="border: solid {{{ insert colors.primary 'default=black' }}} 2px; padding: 10px;">
+                    <!-- START: Template specific content -->
+                    <h3>New {{{ insert itemName }}} Details:</h3>
+                    {{{ insert renderedData }}}
+                    <div
+                        style="font-size: 2px; line-height: 2px; height: 2px; margin-top: 2px; background: {{{ insert colors.primary 'default=black' }}};"
+                        role="separator"
+                    >
+                        &#8202;
+                    </div>
+
+                    <p style="text-align: center; color: {{{ insert colors.grey 'default=grey' }}};">
+                        Relevant parties have been added to this thread, feel free to reply directly.
+                    </p>
+
+                    <!-- END: Template specific content -->
+                </div>
+
+              
+
+                <div style="text-align: center; margin: 25px 0; font-size: 14px;">
+                    <p>
+                        Questions? Contact
+                        <a href="mailto:{{{ insert emails.support 'default=help@minute.tech' }}}">{{{ insert emails.support 'default=help@minute.tech' }}}</a>
+                    </p>
+
+                    <p>
+                        <a href="{{{ insert ppUrl 'default=fire-react-house.web.app/privacy-policy' }}}">Privacy Policy</a>
+                        &nbsp;&nbsp;
+                        <a href="{{{ insert termsUrl 'default=fire-react-house.web.app/terms' }}}">Terms &amp; Conditions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- TODO: Subject in Settings of this template is set with " {{{subject}}} " -->
+
+
+<!-- TODO: Test Data INACCURATE -->
+<script>
+    const testData = {
+        "siteName": "Fire React House",
+        "logoUrl": "https://firebasestorage.googleapis.com/v0/b/fire-react-house.appspot.com/o/public%2Flogos%2Flogo192.png?alt=media&token=a7113554-bb7d-4119-8621-ee7b4d7a8b41",
+        "logoWidth": 160,
+        "colors": {
+            "primary": "skyblue"
+        },
+        "emails": {
+            "support": "help@minute.tech"
+        },
+        "ppUrl": "fire-react-house.web.app/privacy-policy",
+        "termsUrl": "fire-react-house.web.app/terms",
+        "itemName": "Entry",
+        "renderedData": "<p><b>Name:</b> Example Item</p><p><b>Email:</b> doug@minute.tech</p><p><b>Body:</b> Lorem ipsum description would go here to describe the store in detail.</p>"
+    }
+</script>
